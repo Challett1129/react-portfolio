@@ -6,7 +6,12 @@ main {
 }
 
 :root {
-  --primary: #
+  --primary: #E5EBEA;
+  --secondary: #ED6A5A;
+  --tertiary: #6A2E35;
+  --light:#F7F7F2;
+  --dark: #0A100D;
+  --error: rgb(49, 46, 45);
 }
 
 * {
@@ -25,7 +30,7 @@ body {
   line-height: 1.5;
   font-size: 1em;
   letter-spacing: .05em;
-  background-color: #E5EBEA;
+  background-color: var(--primary);
 }
 
 a {
@@ -38,18 +43,23 @@ header {
   display: block;
   align-items: center;
   background-color: #ED6A5A;
-  color: #F7F7F2
+  color: var(--light);
 }
 
 
 header a {
   padding: 5px;
   margin-left: .5em;
-  border-bottom: 1px solid #F7F7F2; 
+  border-bottom: 1px solid var(--light);
+}
+
+header ul {
+  padding: 0px;
 }
 
 header ul li {
-  padding-left: 3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 header ul li span {
@@ -57,11 +67,73 @@ header ul li span {
 }
 
 header ul li span:hover {
-  color: #6A2E35;
+  color: var(--tertiary);
+}
+
+input {
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.08)
+}
+
+input:focus {
+  outline: none;
+}
+
+button { 
+  background-color: #721817  ;
+  color: #E5EBEA;
+  height: 2rem;
+  width: 6rem;
+  margin-top: .5rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: .5rem;
+}
+
+button:hover {
+  opacity: .8;
+}
+
+
+
+textarea {
+  width: 500px;
+  height: 150px;
+  resize: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.08)
+}
+
+textarea:focus {
+  outline: none;
+}
+
+input {
+  margin: 5px;
+
 }
 
 .navActive {
-  color: #6A2E35;
+  color: var(--tertiary);
+}
+
+.aboutPicture {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.error-text {
+  color: red;
+  margin: 5px;
 }
 
 .wrap {
@@ -95,30 +167,18 @@ header ul li span:hover {
   justify-content: flex-end;
 }
 
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
 
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
 
-@media only screen and (min-width: 768px) {
-  header a {
-    width: 100%;
+@media screen and (max-width: 700px) {
+  
+  .flex-row-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
+  }
+
+  textarea {
+    width: 95%;
   }
 }
