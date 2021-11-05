@@ -58,6 +58,7 @@ header ul {
 }
 
 header ul li {
+  margin-left: .7rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
@@ -70,10 +71,18 @@ header ul li span:hover {
   color: var(--tertiary);
 }
 
+label {
+  padding: 5px;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
 input {
   padding: 5px;
   border-radius: 10px;
+  width: 500px;
   border: none;
+
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.08)
 }
 
@@ -91,13 +100,12 @@ button {
   outline: none;
   border: none;
   border-radius: .5rem;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.08)
 }
 
 button:hover {
   opacity: .8;
 }
-
-
 
 textarea {
   width: 500px;
@@ -106,7 +114,8 @@ textarea {
   padding: 10px;
   border-radius: 10px;
   border: none;
-  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.08)
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.08);
+  margin: 5px;
 }
 
 textarea:focus {
@@ -115,12 +124,18 @@ textarea:focus {
 
 input {
   margin: 5px;
+  padding: .5rem;
 
 }
 
 .navActive {
   color: var(--tertiary);
+  transition: all 250ms;
+  font-size: 1.2rem;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
+
 
 .aboutPicture {
   display: inline-block;
@@ -146,6 +161,10 @@ input {
 
 .no-style-list {
   list-style: none;
+}
+
+.justify-column {
+  flex-direction: column;
 }
 
 .flex-row {
@@ -179,6 +198,9 @@ input {
   }
 
   textarea {
+    width: 95%;
+  }
+  input {
     width: 95%;
   }
 }

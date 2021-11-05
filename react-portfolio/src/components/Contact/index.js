@@ -41,11 +41,11 @@ function ContactForm() {
         <h1 data-testid="contact">Contact me</h1>
         <form id='contact-form' onSubmit={handleSubmit}>
             <div>
-                <label htmlFor="name">Name:</label>
+                <label htmlFor="name">Name: <br></br></label>
                 <input type="text" name="name" defaultValue={name} onBlur={handleChange}/>
             </div>
             <div>
-                <label htmlFor="email">Email address:</label>
+                <label htmlFor="email">Email address: <br></br></label>
                 <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
             </div>
             <div>

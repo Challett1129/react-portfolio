@@ -13,16 +13,20 @@ function App() {
 
   const [categories] = useState([
     {
-      name: 'about'
+      name: 'about',
+      link: '/'
     },
     {
-      name: 'projects'
+      name: 'projects',
+      link: '/projects'
     },
     {
-      name: 'contact'
+      name: 'contact',
+      link: '/contact'
     },
     {
-      name: 'resume'
+      name: 'resume',
+      link: '/resume'
     }
   ])
 
