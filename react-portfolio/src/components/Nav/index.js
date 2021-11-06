@@ -1,5 +1,6 @@
 import React from 'react';
-import {capitalizeFirstLetter} from '../../utils/helpers';
+import { capitalizeFirstLetter } from '../../utils/helpers';
+import { Link } from 'react-router-dom'
 
 
 function Nav(props) {
@@ -21,11 +22,11 @@ function Nav(props) {
               <li className={`${currentCategory.name === category.name && 'navActive'}`}
               key={category.name} 
               >
-                <span 
+                <Link to={category.link} 
                 onClick={() => {setCurrentCategory(category)}}
                 >
                   {capitalizeFirstLetter(category.name)}
-                </span>
+                </Link>
                 </li>
             ))}
           </ul>
