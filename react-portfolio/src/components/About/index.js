@@ -13,9 +13,6 @@ function About() {
                 <img src={photo} className='aboutPicture' alt='Me'/>
                 <Col>Hello! I'm a full-stack web developer currently based in Austin, Tx.</Col>
             </Row>
-            <Row>
-                <Col>This is extra text</Col>
-            </Row>
         </Container>
     )
 
