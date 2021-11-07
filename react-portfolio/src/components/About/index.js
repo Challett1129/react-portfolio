@@ -10,7 +10,7 @@ function About() {
         <div className='flex-row-center'>
             <Container fluid className='paper'>
                 <Row>
-                    <div className='flex-row-center'>
+                    <div className='flex-row-center aboutBar'>
                     <img src={photo} className='aboutPicture' alt='Me'/>
                     </div>
                     <Col>
