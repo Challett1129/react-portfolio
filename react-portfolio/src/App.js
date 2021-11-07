@@ -1,19 +1,16 @@
 import React, {useState} from 'react';
 import './App.css';
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Row';
 import Nav from './components/Nav';
 import About from './components/About';
 import ContactForm from './components/Contact';
 import Projects from './components/Projects';
 import Resume from './components/Resume'
-import { capitalizeFirstLetter } from './utils/helpers';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -57,6 +54,7 @@ function App() {
             <Route path='/resume' element={<Resume/>}/>
           </Container>
         </Routes>
+        <Footer></Footer>
       </main>
     </div>
   );

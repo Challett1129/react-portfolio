@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import photo from '../../assets/projects/Note-Taker.PNG'
-import ghIcon from '../../assets/GitHub-Mark-Light-64px.png';
+import ghIcon from '../../assets/icons8-github-100.png';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Projects() {
@@ -44,20 +43,22 @@ function Projects() {
 
         }
     ])
-
+    
     return (
         <section className='flex-row space-between'> 
-        {portfolioProjects.map(( project ) => (
-            <div className='image-container'>
+        {portfolioProjects.map(( project, i ) => (
+            <div
+            className='image-container'
+            key={i}
+            >
                 <img className='project-img'src={require(`../../assets/projects/${project.img}`).default} alt={capitalizeFirstLetter(project.name)}></img>
                 <div className='image-overlay image-overlay-blur'>
                     <div className='image-title'><a href={project.liveLink} rel='noreferrer' target='_blank'>{capitalizeFirstLetter(project.name)}</a></div>
-                    <a href={project.ghLink} rel='noreferrer' target='_blank'><img className='ghIcon' src={ghIcon}/></a>
+                    <a href={project.ghLink} rel='noreferrer' target='_blank'><img className='ghIcon' alt ='GitHub Icon' src={ghIcon}/></a>
                 </div>
             </div>
         ))}
         </section>
-
     )
 };
 
