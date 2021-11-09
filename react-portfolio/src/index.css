@@ -24,7 +24,6 @@ main {
 
 html,
 body {
-  min-height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -191,7 +190,6 @@ footer ul li img:hover {
   left: 0;
   right: 0;
   margin-bottom: 0;
-  height: 8rem;
 }
 
 .aboutBar {
@@ -205,8 +203,7 @@ footer ul li img:hover {
 }
 
 .wrap {
-  margin-left: auto;
-  margin-right: auto;
+  min-height: calc(100vh - 70px);
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -240,7 +237,6 @@ footer ul li img:hover {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 
 .flex-around {
   justify-content: space-around;
@@ -312,6 +308,10 @@ footer ul li img:hover {
 
 .ghIcon {
   padding: 10px;
+}
+
+.contact {
+  width: 100%;
 }
 
 

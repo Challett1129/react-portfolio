@@ -12,6 +12,7 @@ import Projects from './components/Projects';
 import Resume from './components/Resume'
 import Footer from './components/Footer';
 
+
 function App() {
 
   const [categories] = useState([
@@ -38,16 +39,16 @@ function App() {
 
 
   return (
-    <div className='wrap'>
+    <div>
       <Nav
       categories={categories}
       setCurrentCategory={setCurrentCategory}
       currentCategory={currentCategory}
       >
       </Nav>
-      <main>
+      <main className='wrap'>
         <Routes>
-          <Container fluid>
+          <Container>
             <Route path='/' element={<About/>}/>
             <Route path='/contact' element={<ContactForm/>}/>
             <Route path='/projects' element={<Projects/>}/>
