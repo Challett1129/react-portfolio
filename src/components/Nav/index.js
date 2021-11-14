@@ -15,7 +15,7 @@ function Nav(props) {
     <header>
       <div className="flex-row-header col-12">
         <h1>
-          <a href='/'> Collin Hallett </a>
+          <a href='/about'> Collin Hallett </a>
         </h1>
           <ul className="no-style-list flex-row">
             {categories.map((category) => (
