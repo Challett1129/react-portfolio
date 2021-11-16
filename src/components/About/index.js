@@ -8,7 +8,7 @@ function About() {
 
     return (
         <div className='flex-row-center'>
-            <Container fluid className='paper'>
+            <Container fluid className='paper aboutWrapper'>
                 <Row>
                     <div className='flex-row-center aboutBar'>
                     <img src={photo} className='aboutPicture' alt='Me'/>

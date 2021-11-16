@@ -372,7 +372,16 @@ footer ul li img:hover {
 
 @media screen and (max-width: 600px) {
   header ul li a {
-    font-size: 1rem;
+    font-size: .7rem;
+  }
+  
+  footer ul li img {
+    height: 35px;
+  }
+
+
+  .aboutWrapper {
+    width: 100%;
   }
 
   .navActive {
